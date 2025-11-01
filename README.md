@@ -137,4 +137,4 @@ EcoCycle is a community-focused waste management platform that encourages sustai
 ## 👨‍💻 **Team Developers**
 - 👨‍💻 Arron Kian Parejas  
 - 👨‍💻 Ram Achilles Guinto  
-
+- 👨‍💻 Marc Samuel Pabilona 
