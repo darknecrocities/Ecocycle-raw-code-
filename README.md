@@ -58,6 +58,7 @@ EcoCycle is a community-focused waste management platform that encourages sustai
 - Redemption history showing past transactions and their status
 - Minimum redemption thresholds and transaction fees display
 
+-
 ### Achievements & Badges System
 - Users unlock achievements and badges for reaching milestones
 - Achievement categories include total waste logged, EcoCoins earned, consecutive logging streaks, and specific waste type targets (including electronics waste milestones)
