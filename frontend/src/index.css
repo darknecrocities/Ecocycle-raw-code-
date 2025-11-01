@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Enhanced eco-friendly color palette - Light mode */
+        --background: 0.98 0.01 140;
+        --foreground: 0.20 0.02 160;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.02 160;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.02 160;
+        
+        /* Primary: Vibrant eco-green */
+        --primary: 0.62 0.20 155;
+        --primary-foreground: 0.98 0.01 140;
+        
+        /* Secondary: Earth brown */
+        --secondary: 0.72 0.10 80;
+        --secondary-foreground: 0.20 0.02 160;
+        
+        /* Muted: Soft sage */
+        --muted: 0.94 0.02 150;
+        --muted-foreground: 0.48 0.03 160;
+        
+        /* Accent: Fresh mint */
+        --accent: 0.82 0.12 165;
+        --accent-foreground: 0.25 0.03 160;
+        
+        /* Success: Bright green */
+        --success: 0.68 0.22 145;
+        --success-foreground: 0.98 0.01 140;
+        
+        /* Warning: Warm amber */
+        --warning: 0.73 0.16 70;
+        --warning-foreground: 0.20 0.02 160;
+        
+        --destructive: 0.58 0.24 25;
+        --destructive-foreground: 0.98 0.01 140;
+        
+        --border: 0.90 0.02 150;
+        --input: 0.90 0.02 150;
+        --ring: 0.62 0.20 155;
+        
+        /* Enhanced chart colors - eco-themed */
+        --chart-1: 0.62 0.20 155;
+        --chart-2: 0.68 0.18 180;
+        --chart-3: 0.73 0.14 120;
+        --chart-4: 0.66 0.17 200;
+        --chart-5: 0.70 0.15 90;
+        
+        --sidebar: 0.98 0.01 140;
+        --sidebar-foreground: 0.20 0.02 160;
+        --sidebar-primary: 0.62 0.20 155;
+        --sidebar-primary-foreground: 0.98 0.01 140;
+        --sidebar-accent: 0.94 0.02 150;
+        --sidebar-accent-foreground: 0.25 0.03 160;
+        --sidebar-border: 0.90 0.02 150;
+        --sidebar-ring: 0.62 0.20 155;
+    }
+
+    .dark {
+        --background: 0.16 0.02 160;
+        --foreground: 0.96 0.01 140;
+        
+        --card: 0.20 0.02 160;
+        --card-foreground: 0.96 0.01 140;
+        
+        --popover: 0.20 0.02 160;
+        --popover-foreground: 0.96 0.01 140;
+        
+        /* Primary: Bright eco-green for dark mode */
+        --primary: 0.70 0.22 155;
+        --primary-foreground: 0.16 0.02 160;
+        
+        /* Secondary: Lighter earth tone */
+        --secondary: 0.32 0.04 160;
+        --secondary-foreground: 0.96 0.01 140;
+        
+        --muted: 0.28 0.03 160;
+        --muted-foreground: 0.72 0.03 150;
+        
+        /* Accent: Vibrant mint */
+        --accent: 0.66 0.18 165;
+        --accent-foreground: 0.16 0.02 160;
+        
+        --success: 0.73 0.24 145;
+        --success-foreground: 0.16 0.02 160;
+        
+        --warning: 0.76 0.20 70;
+        --warning-foreground: 0.16 0.02 160;
+        
+        --destructive: 0.63 0.26 25;
+        --destructive-foreground: 0.96 0.01 140;
+        
+        --border: 0.28 0.03 160;
+        --input: 0.28 0.03 160;
+        --ring: 0.70 0.22 155;
+        
+        --chart-1: 0.70 0.22 155;
+        --chart-2: 0.73 0.20 180;
+        --chart-3: 0.76 0.17 120;
+        --chart-4: 0.71 0.21 200;
+        --chart-5: 0.74 0.19 90;
+        
+        --sidebar: 0.20 0.02 160;
+        --sidebar-foreground: 0.96 0.01 140;
+        --sidebar-primary: 0.70 0.22 155;
+        --sidebar-primary-foreground: 0.16 0.02 160;
+        --sidebar-accent: 0.28 0.03 160;
+        --sidebar-accent-foreground: 0.96 0.01 140;
+        --sidebar-border: 0.28 0.03 160;
+        --sidebar-ring: 0.70 0.22 155;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .eco-gradient {
+        background: linear-gradient(135deg, oklch(0.62 0.20 155) 0%, oklch(0.68 0.18 180) 100%);
+    }
+    
+    .earth-gradient {
+        background: linear-gradient(135deg, oklch(0.72 0.10 80) 0%, oklch(0.68 0.14 120) 100%);
+    }
+    
+    .success-gradient {
+        background: linear-gradient(135deg, oklch(0.68 0.22 145) 0%, oklch(0.62 0.20 155) 100%);
+    }
+    
+    .accent-gradient {
+        background: linear-gradient(135deg, oklch(0.82 0.12 165) 0%, oklch(0.68 0.18 180) 100%);
+    }
+}
